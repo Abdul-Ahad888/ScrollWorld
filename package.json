@@ -1,0 +1,21 @@
+{
+  "name": "scrollworld",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "lenis": "^1.3.17",
+    "sharp": "^0.34.5",
+    "split-type": "^0.3.4",
+    "three": "^0.182.0"
+  }
+}

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>ScrollWorld</title>
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="loader-logo"></div>
+    <div class="loader-progress-bar">
+      <div class="loader-progress-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- -------------------------ScrollBar------------------------- -->
+
+  <div class="scrollbar">
+    <div class="thumb"></div>
+  </div>
+
+  <!-- -------------------------Cursor------------------------- -->
+   
+  <div class="curzr" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path class="inner"
+        d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z"
+        fill="#F2F5F8" />
+      <path class="outer"
+        d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z"
+        fill="#111920" />
+    </svg>
+  </div>
+
+  <!-- -------------------------Navigation Menu------------------------- -->
+
+  <div class="main">
+    <nav>
+      <div class="nav-links">
+        <a href="#outro">Ove<span class="nav-link-span-tag">rView</span></a>
+        <a href="#sec-2">Ex<span class="nav-link-span-tag">perience</span></a>
+        <a href="#sec-3">Mo<span class="nav-link-span-tag">del</span></a>
+        <a href="#sec-4">Eye<span class="nav-link-span-tag">Tracking</span></a>
+      </div>
+      <div class="logo">
+        <a href="#"><img src="assets/logo.png" alt=""></a>
+      </div>
+      <!-- <div class="nav-buttons">
+        <button class="btn-explore"><a href="">Explore World</a></button>
+      </div> -->
+    </nav>
+
+    <!-- -------------------------Go Back To Top Section------------------------- -->
+
+    <section id="scroll" class="position-absolute top-0"></section>
+
+    <!-- -------------------------Hero Section------------------------- -->
+
+    <section class="hero" id="hero">
+      <canvas id="canvas"></canvas>
+      <div class="hero-content">
+        <div class="header">
+          <h1>Built to Move With You</h1>
+          <p>Every scroll reveals depth, detail, and interaction — crafted for next-gen web experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------Outro Section------------------------- -->
+
+    <section class="outro" id="outro">
+      <h1 class="reveal-text p-4">Discover Seamless Web Experiences Where Every Scroll Unveils New Layers Of Innovation,
+        Detail, And Interactivity — Designed To Move With You Into The Future Of The Web.</h1>
+    </section>
+
+    <!-- -------------------------Sec-Two------------------------- -->
+
+    <section class="sec-2" id="sec-2">
+      <div class="sticky-tab">
+        <h1>Experience</h1>
+        <div class="sticky-tab-img">
+          <img src="https://cdn.prod.website-files.com/64b117fb0e09e8ce5768e4fe/64b7d30aa9b24259d10be24d_symbol.svg"
+            alt="Abstract symbol representing digital innovation">
+        </div>
+      </div>
+
+      <div class="scroll-text-tabs">
+        <div class="text-tab">
+          <h1>Immersive Interactions</h1>
+          <p>Step into a web experience where every scroll draws you deeper. Our interfaces leverage smooth, intuitive
+            transitions and microinteractions to keep users engaged and curious at every turn.</p>
+        </div>
+        <div class="text-tab">
+          <h1>Performance at Scale</h1>
+          <p>Engineered for speed and stability, our platforms deliver seamless content, even as complexity grows.
+            Optimize your journey with blazing fast load times and ultra-responsive layouts on all devices.</p>
+        </div>
+        <div class="text-tab">
+          <h1>Accessible by Design</h1>
+          <p>We prioritize inclusive design principles in every element. From keyboard navigation to color contrast and
+            screen reader compatibility, our experiences ensure everyone can connect, discover, and interact.</p>
+        </div>
+        <div class="text-tab">
+          <h1>Crafted for Storytelling</h1>
+          <p>Unfold your brand’s story in new ways with layered visuals, dynamic content, and thoughtful scroll-driven
+            reveals. Every section is designed to guide the user on a journey that feels personal, inviting, and
+            memorable.</p>
+        </div>
+        <div class="spacer-xl"></div>
+      </div>
+    </section>
+
+    <!-- -------------------------Section Three------------------------- -->
+
+    <section></section>
+
+    <section class="sec-3" id="sec-3">
+      <div class="text-head-1">
+        <h1>ScrollWorld Experience</h1>
+      </div>
+
+      <div class="circular-mask">
+        <div class="model-container"></div>
+        <div class="text-head-2">
+          <h1>3D Model</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------Section Four------------------------- -->
+
+    <section class="sec-4-wrapper d-none d-md-block" >
+      <section class="sec-4" id="sec-4">
+
+        <!-- FACE -->
+        <div class="face">
+          <div class="eyes">
+            <div class="eye">
+              <div class="pupil"></div>
+            </div>
+            <div class="eye">
+              <div class="pupil"></div>
+            </div>
+          </div>
+          <div class="mouth"></div>
+        </div>
+
+      </section>
+    </section>
+  </div>
+
+  <!-- -------------------------Footer------------------------- -->
+
+  <footer id="footer">
+
+    <div class="top-content">
+      <p style="margin-top: 1em; color: #aaa; font-size: 0.95em;" class="text-center">
+        &copy; 2026 ScrollWorld. Crafted with passion for smooth journeys.
+      </p>
+    </div>
+
+    <div class="upper-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-6">
+            <h2>Thank you for visiting ScrollWorld</h2>
+            <p>
+              Dive into an immersive scrolling experience with interactive visuals, playful elements, and 3D models.<br>
+              Stay curious and keep exploring!
+            </p>
+            <p style="margin-top: 1.5em; color: #5f5f5f; font-size: 0.95em;">
+              Follow us for more updates and creative adventures.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <a href="https://github.com/Abdul-Ahad888" target="_blank">
+              <div class="footer-link-button-icon">
+                <div class="footer-link-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="footer-link-cube">
+                  <span class="footer-link-side footer-link-front-github">Github</span>
+                  <span class="footer-link-side footer-link-top-github">https://github.com/Abdul-Ahad888</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/abdul-ahad-fullstack-dev" target="_blank">
+              <div class="footer-link-button-icon">
+                <div class="footer-link-icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="footer-link-cube">
+                  <span class="footer-link-side footer-link-front-linkedin">Linkedin</span>
+                  <span
+                    class="footer-link-side footer-link-top-linkedin">https://www.linkedin.com/in/abdul-ahad-fullstack-dev</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://nextfolio-portfolio.netlify.app" target="_blank">
+              <div class="footer-link-button-icon">
+                <div class="footer-link-icon">
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="footer-link-cube">
+                  <span class="footer-link-side footer-link-front-portfolio">PortFolio</span>
+                  <span
+                    class="footer-link-side footer-link-top-portfolio">https://nextfolio-portfolio.netlify.app</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-content">
+      <h1 class="text" data-flicker="w">
+        Scroll<span class="flicker-w">w</span>orld
+      </h1>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- -------------------------Section Five------------------------- -->
+
+  <!-- <section class="sec-5-wrapper">
+    <section class="sec-5">
+      <div class="sec-5-header">
+        <h2>Lorem ipsum dolor</h2>
+      </div>
+
+      <div class="img-card-container">
+        <div class="img-card" id="img-card-1">
+          <div class="img-card-front">
+            <img src="./assets/3img/row-1-column-1.webp" alt="">
+          </div>
+          <div class="img-card-back">
+            <span>01</span>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </div>
+        <div class="img-card" id="img-card-2">
+          <div class="img-card-front">
+            <img src="./assets/3img/row-1-column-2.webp" alt="">
+          </div>
+          <div class="img-card-back">
+            <span>02</span>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </div>
+        <div class="img-card" id="img-card-3">
+          <div class="img-card-front">
+            <img src="./assets/3img/row-1-column-3.webp" alt="">
+          </div>
+          <div class="img-card-back">
+            <span>03</span>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section> -->
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
